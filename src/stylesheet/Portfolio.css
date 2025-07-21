@@ -1,0 +1,385 @@
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../image/background.png");
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+}
+
+
+#portfolio .maincategory{
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+#portfolio #category{
+    height: 400px;
+    padding: 20px 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: end;
+    align-items: start;
+    bottom: 0;
+    flex-basis: calc(16.6% - 16px);
+    max-width: calc(18% - 16px);
+    cursor: pointer;
+}
+@media (max-width:1405px){
+  #portfolio #category{
+    flex-basis: calc(32.6% - 16px);
+    max-width: calc(46% - 26px);
+  }
+}
+@media (max-width:1023px) {
+    #portfolio #category{
+      height:250px;
+      flex-basis: calc(33.6% - 16px);
+      max-width: calc(46% - 26px);
+    }
+    
+}
+
+
+.category1{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.308), black), url('../image/category/marriage.png');
+  object-fit: cover;
+}
+.category2{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.308), black), url('../image/category/prepostwedding.png');
+}
+.category3{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.308), black), url('../image/category/babyshower.png');
+}
+.category4{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.308), black), url('../image/category/droneair.png');
+}
+.category5{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.308), black), url('../image/category/event.png');
+}
+.category6{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.308), black), url('../image/category/product.png');
+}
+
+#category h3{
+    font-family: "Over the Rainbow", cursive;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#category h2{
+    font-size: 20px;
+}
+
+#portfolio .section {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Filter Tabs */
+
+  .filter-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-wrap: nowrap;
+    width: 100%;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: #f9f9f9;
+  }
+  
+  .tab {
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .tab:hover {
+    background-color: #c1dfff;
+    color: #21291a;
+  }
+  .tab.active{
+    background-color: #21291a;
+    color: white;
+    border-color: #21291a;
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1 1 calc(16.66% - 16px); /* Five images per row */
+    max-width: calc(20% - 16px);
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 1700px){
+    .gallery-item{
+      flex:1 1 calc(22.66% - 16px);
+      max-width: calc(30% - 16px);
+    }
+  }
+  @media (max-width: 1023px) {
+    .gallery-item {
+      flex: 1 1 calc(33.333% - 16px); /* Three images per row on tablets */
+      max-width: calc(33.333% - 16px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-item {
+      flex: 1 1 calc(50% - 16px); /* Two images per row on smaller screens */
+      max-width: calc(50% - 16px);
+    }
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+  }
+  
+  .page-button {
+    margin: 0 4px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+  
+  .page-button.active,
+  .page-button:hover {
+    background-color: #21291a;
+    color: white
+  }  
+  .pagination .arrow-button{
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    background-color: #21291a;
+    border-radius: 2px;
+  }
+
+  /* Reset Filter Button */
+.reset-filter {
+    margin-left: 8px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .reset-filter:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+  }
+
+
+  /*VIDEO SLIDER*/
+  /* Video Carousel */
+.video-card {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .video-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+
+  .swiper-slide{
+    margin-right: 20px !important;
+  }
+  @media (max-width:1500px){
+    .video-preview{
+      height: 500px;
+    }
+  }
+  
+  /* Modal Styling */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(253, 37, 37, 0.637);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .close-btn:hover {
+    background-color: rgb(0, 0, 0);
+    color:white;
+  }
+
+    /*POPUP MODAL DESIGN*/
+
+    .modal-thumbnails {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .thumbnail {
+      margin: 0 5px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      width: 15%;
+      object-fit: cover;
+      opacity: 70%;
+    }
+    .modal-image{
+      width: 70%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media only screen and (max-width:1000px) {
+      .modal{height:40%}
+    }
+    .thumbnail:hover {
+      border-color: #21291a;
+    }
+    
+    .modelbuttons button{
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      cursor: pointer;
+      border: none;
+      background-color: #21291a;
+      color: white;
+    }
+  
+    .previmage{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .modelbuttons{
+      display: flex;
+      position: absolute;
+      justify-content: space-between;
+      width: 80%;
+      top: 50%;
+      
+    }
+  
+  /* Add these to your CSS */
+  .portfoliovideos{
+    position: relative;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }

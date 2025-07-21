@@ -1,0 +1,88 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Category 1",
+      "subtitle": "MARRIAGE",
+      "backgroundImage": "url('../image/category/12.png')"
+    },
+    {
+      "id": 2,
+      "title": "Category 2",
+      "subtitle": "PRE | POST WEDDING",
+      "backgroundImage": "url('/path-to-background2.jpg')"
+    },
+    {
+      "id": 3,
+      "title": "Category 3",
+      "subtitle": "BABY SHOWER",
+      "backgroundImage": "url('/path-to-background3.jpg')"
+    },
+    {
+      "id": 4,
+      "title": "Category 4",
+      "subtitle": "DRONE AIR",
+      "backgroundImage": "url('/path-to-background4.jpg')"
+    },
+    {
+      "id": 5,
+      "title": "Category 5",
+      "subtitle": "EVENT",
+      "backgroundImage": "url('/path-to-background5.jpg')"
+    },
+    {
+    "id": 5,
+    "title": "Category 6",
+    "subtitle": "PRODUCT",
+    "backgroundImage": "url('/path-to-background5.jpg')"
+  }
+  ],
+  "images": [
+    { "id": 1, "src": "./image/gallery/1.jpg", "category": "MARRIAGE" },
+    { "id": 2, "src": "./image/gallery/2.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 3, "src": "./image/gallery/3.jpg", "category": "BABY SHOWER" },
+    { "id": 4, "src": "./image/gallery/4.jpg", "category": "DRONE AIR" },
+    { "id": 5, "src": "./image/gallery/5.jpg", "category": "EVENT" },
+    { "id": 6, "src": "./image/gallery/6.jpg", "category": "MARRIAGE" },
+    { "id": 7, "src": "./image/gallery/7.jpg", "category": "PRODUCT" },
+    { "id": 8, "src": "./image/gallery/8.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 9, "src": "./image/gallery/9.jpg", "category": "BABY SHOWER" },
+    { "id": 10, "src": "./image/gallery/10.jpg", "category": "DRONE AIR" },
+    { "id": 11, "src": "./image/gallery/11.jpg", "category": "EVENT" },
+    { "id": 12, "src": "./image/gallery/12.jpg", "category": "PRODUCT" },
+    { "id": 13, "src": "./image/gallery/13.jpg", "category": "MARRIAGE" },
+    { "id": 14, "src": "./image/gallery/14.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 15, "src": "./image/gallery/15.jpg", "category": "BABY SHOWER" },
+    { "id": 16, "src": "./image/gallery/16.jpg", "category": "DRONE AIR" },
+    { "id": 17, "src": "./image/gallery/17.jpg", "category": "EVENT" },
+    { "id": 18, "src": "./image/gallery/18.jpg", "category": "MARRIAGE" },
+    { "id": 19, "src": "./image/gallery/19.jpg", "category": "MARRIAGE" },
+    { "id": 20, "src": "./image/gallery/20.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 21, "src": "./image/gallery/21.jpg", "category": "BABY SHOWER" },
+    { "id": 22, "src": "./image/gallery/22.jpg", "category": "DRONE AIR" },
+    { "id": 23, "src": "./image/gallery/23.jpg", "category": "EVENT" },
+    { "id": 24, "src": "./image/gallery/24.jpg", "category": "PRODUCT" },
+    { "id": 25, "src": "./image/gallery/25.jpg", "category": "MARRIAGE" },
+    { "id": 26, "src": "./image/gallery/26.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 27, "src": "./image/gallery/27.jpg", "category": "BABY SHOWER" },
+    { "id": 28, "src": "./image/gallery/28.jpg", "category": "DRONE AIR" },
+    { "id": 29, "src": "./image/gallery/29.jpg", "category": "EVENT" },
+    { "id": 30, "src": "./image/gallery/30.jpg", "category": "PRODUCT" },
+    { "id": 31, "src": "./image/gallery/31.jpg", "category": "MARRIAGE" },
+    { "id": 32, "src": "./image/gallery/32.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 33, "src": "./image/gallery/33.jpg", "category": "BABY SHOWER" },
+    { "id": 34, "src": "./image/gallery/34.jpg", "category": "DRONE AIR" },
+    { "id": 35, "src": "./image/gallery/35.jpg", "category": "EVENT" },
+    { "id": 36, "src": "./image/gallery/36.jpg", "category": "PRODUCT" },
+    { "id": 37, "src": "./image/gallery/37.jpg", "category": "MARRIAGE" },
+    { "id": 38, "src": "./image/gallery/38.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 39, "src": "./image/gallery/39.jpg", "category": "BABY SHOWER" },
+    { "id": 40, "src": "./image/gallery/40.jpg", "category": "DRONE AIR" },
+    { "id": 41, "src": "./image/gallery/41.jpg", "category": "EVENT" },
+    { "id": 42, "src": "./image/gallery/42.jpg", "category": "PRODUCT" },
+    { "id": 43, "src": "./image/gallery/43.jpg", "category": "MARRIAGE" },
+    { "id": 44, "src": "./image/gallery/44.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 45, "src": "./image/gallery/45.jpg", "category": "BABY SHOWER" },
+    { "id": 46, "src": "./image/gallery/46.jpg", "category": "DRONE AIR" }
+  ]
+}
