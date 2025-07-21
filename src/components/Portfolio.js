@@ -155,7 +155,7 @@ const Portfolio = () => {
                 )
               }
             >
-              <img src={image.src} alt={`Image ${image.id}`} />
+              <img src={image.src} alt={`Gallery image ${image.id} - ${image.category}`} />
               {/*<p>{image.category}</p>*/}
             </div>
           ))}
@@ -210,7 +210,7 @@ const Portfolio = () => {
 
             <img
               src={modalImages[currentImageIndex].src}
-              alt={`Image ${modalImages[currentImageIndex].id}`}
+              alt={`Gallery image ${modalImages[currentImageIndex].id} - ${modalImages[currentImageIndex].category}`}
               className="modal-image"
             />
 
@@ -269,7 +269,7 @@ const Portfolio = () => {
           {videos.map((video) => (
             <SwiperSlide key={video.id}>
               <div className="video-card" onClick={() => handleCardClick(video.src)}>
-                <video src={video.src} muted loop className="video-preview"></video>
+                <video src={video.src} muted loop className="video-preview" aria-label={`Preview of ${video.title}`}></video>
                 <h3>{video.title}</h3>
               </div>
             </SwiperSlide>
@@ -283,7 +283,7 @@ const Portfolio = () => {
         {showModal && (
           <div className="modal-overlay">
             <div className="modal">
-              <video src={currentVideo} controls autoPlay className="video-player"></video>
+              <video src={currentVideo} controls autoPlay className="video-player" aria-label="Full video player"></video>
               <button onClick={handleCloseModal} className="close-btn">Close</button>
             </div>
           </div>

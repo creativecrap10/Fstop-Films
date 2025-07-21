@@ -10,6 +10,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showBookingModal, setShowBookingModal] = useState(false);
 
   const handleScroll = (e, id) => {
     e.preventDefault();
@@ -54,6 +55,30 @@ const App = () => {
       window.removeEventListener("scroll", handleScrollEvent);
     };
   }, []);
+
+  const handleBookNowClick = () => {
+    setShowBookingModal(true);
+    setMenuOpen(false);
+  };
+
+  const closeBookingModal = () => {
+    setShowBookingModal(false);
+  };
+
+  const handleWhatsAppContact = () => {
+    const phoneNumber = "918667352313";
+    const message = "Hi! I would like to book your photography services. Can we discuss the details?";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleEmailContact = () => {
+    const email = "fstop2203@gmail.com";
+    const subject = "Photography Service Booking Inquiry";
+    const body = "Hi,\n\nI'm interested in booking your photography services. Please let me know your availability and packages.\n\nThank you!";
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoUrl);
+  };
 
   return (
     <div className="App">
@@ -113,7 +138,7 @@ const App = () => {
               </a>
             </li>
             <li>
-              <button>BOOK NOW</button>
+              <button onClick={handleBookNowClick}>BOOK NOW</button>
             </li>
           </ul>
         </nav>
@@ -129,11 +154,11 @@ const App = () => {
         <div className="footer-container">
           <h1>Fstop Films</h1>
           <div className="socialicons">
-            <img src="../image/icons/facebook.svg" alt="Facebook" />
-            <img src="../image/icons/instagram.svg" alt="Instagram" />
-            <img src="../image/icons/youtube.svg" alt="YouTube" />
-            <img src="../image/icons/twitter.svg" alt="Twitter" />
-            <img src="../image/icons/linkdin.svg" alt="LinkedIn" />
+            <img src="./image/icons/facebook.svg" alt="Facebook" />
+            <img src="./image/icons/instagram.svg" alt="Instagram" />
+            <img src="./image/icons/youtube.svg" alt="YouTube" />
+            <img src="./image/icons/twitter.svg" alt="Twitter" />
+            <img src="./image/icons/linkdin.svg" alt="LinkedIn" />
           </div>
           <ul className="footer-nav">
             <li>
@@ -167,6 +192,44 @@ const App = () => {
           </div>
         </div>
       </footer>
+
+      {/* Booking Modal */}
+      {showBookingModal && (
+        <div className="booking-modal-overlay" onClick={closeBookingModal}>
+          <div className="booking-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close-btn" onClick={closeBookingModal}>
+              ×
+            </button>
+            <div className="modal-header">
+              <h2>Book Your Session</h2>
+              <p>Ready to capture your precious moments? Get in touch with us!</p>
+            </div>
+            <div className="contact-options">
+              <div className="contact-card" onClick={handleWhatsAppContact}>
+                <div className="contact-icon whatsapp-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p>+91 86673 52313</p>
+                <span>Quick response guaranteed</span>
+              </div>
+              <div className="contact-card" onClick={handleEmailContact}>
+                <div className="contact-icon email-icon">📧</div>
+                <h3>Email</h3>
+                <p>fstop2203@gmail.com</p>
+                <span>Detailed consultation</span>
+              </div>
+              <div className="contact-card">
+                <div className="contact-icon location-icon">📍</div>
+                <h3>Visit Us</h3>
+                <p>Karur, Tamil Nadu</p>
+                <span>Studio consultation</span>
+              </div>
+            </div>
+            <div className="modal-footer">
+              <p>We'll respond within 2 hours during business hours</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

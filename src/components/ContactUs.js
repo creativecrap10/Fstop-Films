@@ -23,6 +23,7 @@ const ContactUs = () => {
             allowFullScreen
             loading="lazy"
             title="Store Location"
+            aria-label="Google Maps showing Fstop Films location in Karur"
           ></iframe>
         </div>
       </div>
