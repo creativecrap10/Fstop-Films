@@ -220,7 +220,7 @@ const App = () => {
               <div className="contact-card">
                 <div className="contact-icon location-icon">📍</div>
                 <h3>Visit Us</h3>
-                <p>Karur, Tamil Nadu</p>
+                <p>Karur & Coimbatore, Tamil Nadu</p>
                 <span>Studio consultation</span>
               </div>
             </div>
