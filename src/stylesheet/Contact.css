@@ -64,7 +64,7 @@
 
   }
   
-  .btn {
+  .contact-form .btn {
     background-color: #ffffff;
     color: #A31D51;
     padding: 10px 20px;
@@ -75,8 +75,9 @@
     transition: background 0.3s ease;
   }
   
-  .btn:hover {
+  .contact-form .btn:hover {
     background-color: black;
+    color: white;
   }
   
   /* Responsive Design */
@@ -96,8 +97,8 @@
   /* Map Section */
   .map-section {
     position: relative;
-    width: 60%;
-    height: 300px;
+    width: 80%;
+    height: 250px;
     border: 10px solid #e9e9e9;
     margin-top: 30px;
     overflow: hidden;

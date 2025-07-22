@@ -61,7 +61,7 @@
     color: white;
     border: none;
     padding: 12px 24px;
-    border-radius: 25px;
+    border-radius: 3px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-top: 15px;
 }
 
 .whatsapp-btn:hover {

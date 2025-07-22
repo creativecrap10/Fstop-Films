@@ -83,6 +83,12 @@
     { "id": 43, "src": "./image/gallery/43.jpg", "category": "MARRIAGE" },
     { "id": 44, "src": "./image/gallery/44.jpg", "category": "PRE | POST WEDDING" },
     { "id": 45, "src": "./image/gallery/45.jpg", "category": "BABY SHOWER" },
-    { "id": 46, "src": "./image/gallery/46.jpg", "category": "DRONE AIR" }
+    { "id": 46, "src": "./image/gallery/46.jpg", "category": "DRONE AIR" },
+    { "id": 47, "src": "./image/gallery/47.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 48, "src": "./image/gallery/48.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 49, "src": "./image/gallery/49.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 50, "src": "./image/gallery/50.jpg", "category": "PRE | POST WEDDING" },
+    { "id": 51, "src": "./image/gallery/51.jpg", "category": "PRE | POST WEDDING" }
+    
   ]
 }
